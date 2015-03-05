@@ -1,0 +1,73 @@
+.outsideBlueProjectControl
+{
+    min-width:500px;
+    margin-top:10px;
+    border:1px solid #da5451;
+    border-radius:3px;
+}
+.outsideRedProjectControl
+{
+    min-width:500px;
+    margin-top:10px;
+    border:1px solid #da5451;
+    border-radius:3px;
+}
+.divTitleProjectControl
+{
+    width:inherit;
+    height:40px;
+    background:#da5451;
+    padding-top:10px;
+}
+.divItemProjectControl
+{
+    width:inherit;
+    height:50px;
+    border-bottom:1px solid #e0e0e0;
+}
+.divItemLeftProjectControl
+{
+    width:50%;
+    float:left;
+    margin-top:12px;
+}
+.divItemRightProjectControl
+{
+    width:50%;
+    float:left;
+    padding-top:12px;
+}
+.spanTextProjectControl
+{
+    font-family:'Microsoft YaHei';
+    font-size:14px;
+    padding-left:10px;
+    margin-top:12px;
+}
+.spanValueProjectControl
+{
+    font-family:'Microsoft YaHei';
+    font-size:14px;
+    margin-top:12px;
+}
+.divItemLeftProjectControlSmall
+{
+   margin-right:10px;
+    float:left;
+    margin-top:12px;
+}
+.textBlue
+{
+    color:#0072c6;
+}
+.textRed
+{
+    color:#ff0000;
+}
+#textTitleProjectControl
+{
+    margin-left:10px;
+    font-family:'Microsoft YaHei';
+    font-size:18px;
+    color:white;
+}

@@ -1,0 +1,36 @@
+
+
+body{-webkit-text-size-adjust:none;color:#333;background:#ffffff;min-width:960px;_width:expression((document.documentElement.clientWidth||document.body.clientWidth)<960?"960px":"");height:2800px;}
+ul,li{list-style-type:none}
+li{vertical-align:top;}
+a{text-decoration:none;cursor:pointer;color:#8b8b89;}
+a:hover{text-decoration:none;color:#8b8b89;}
+a:active, a:focus{-moz-outline:none;outline:none;ie-dummy:expression(this.hideFocus=true);}
+input{outline: medium none;}
+.clearfix{clear: both;}
+.clearfix:after{clear: both;content: "";display: block;height: 0;visibility: hidden;}
+em, i{font-style: normal;}
+.fl{float:left;}
+.fr{float:right;}
+.box{width:962px;height:172px;margin:40px auto;border:1px solid #CCD5F1;}
+.banner{position:relative;width:960px;height:170px;overflow:hidden;margin:1px auto;}
+.mybox{ height: 100%;width: 200%;overflow: hidden;position: absolute;right: 0;top: 0;}
+.mybox .fPics{position:relative;float:right;height:100%;width:39%;background:#F3F9F8;}
+.mybox .fPics a{position:absolute;width:748px;height:100%;display:block;overflow:hidden;top:0;right:0;opacity:0;z-index:1;}
+.mybox .fPics a img{display: block;height: 100%;position: absolute;right: 0;top: 0;width: auto;z-index: 2;}
+.mybox .fBtns{position:relative;float:right;height:100%;width:11%;background:#F4F4F4;}
+.fBtns li, .fBtns span{ background:url(../images/roll_btn.png) no-repeat;}
+.mybox .fBtns li{position:relative;height:20%;}
+.mybox .fBtns li span{position:absolute;top:0;left:0;height:100%;overflow:hidden;display:block;z-index:1;}
+.mybox .fBtns li a{position:relative;height:100%;width:100%;display:block;z-index:2;}
+.mybox .fBtns li.rli1{ background-position:36px -40px;}
+.mybox .fBtns li.rli1 span{ background-position:-99px -40px; background-color:#FF4E00;}
+.mybox .fBtns li.rli2{ background-position:36px -83px;}
+.mybox .fBtns li.rli2 span{ background-position:-99px -83px; background-color:#FFC502;}
+.mybox .fBtns li.rli3{ background-position:36px -127px;}
+.mybox .fBtns li.rli3 span{ background-position:-99px -127px; background-color:#4C8502;}
+.mybox .fBtns li.rli4{ background-position:36px -167px;}
+.mybox .fBtns li.rli4 span{ background-position:-99px -167px; background-color:#009CFF;}
+.mybox .fBtns li.rli5{ background-position:36px -208px;}
+.mybox .fBtns li.rli5 span{ background-position:-99px -208px; background-color:#A19FEA;}
+

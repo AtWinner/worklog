@@ -1,0 +1,449 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>研发管理平台</title>
+    <link href="css/mainpage.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/todo.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/worklog.css" rel="stylesheet" type="text/css" /> 
+    <link href="css/ProjectControl.css" rel="stylesheet" media="screen">
+    <link href="css/superfish.css" rel="stylesheet" media="screen">
+    <link href="css/TableSmart.css" rel="stylesheet" type="text/css" /> 
+    <script type="text/javascript" src="js/jquery-1.11.2.js"></script>
+    <script type="text/javascript" src="js/MainPage.js"></script>
+    <script src="js/hoverIntent.js"></script>
+    <script src="js/superfish.js"></script>
+    <script>
+
+        (function ($) { //create closure so we can safely use $ as alias for jQuery
+
+            $(document).ready(function () {
+                // initialise plugin
+                var example = $('#example').superfish({
+                    //add options here if required
+                });
+
+                // buttons to demonstrate Superfish's public methods
+                $('.destroy').on('click', function () {
+                    example.superfish('destroy');
+                });
+
+                $('.init').on('click', function () {
+                    example.superfish();
+                });
+
+                $('.open').on('click', function () {
+                    example.children('li:first').superfish('show');
+                });
+
+                $('.close').on('click', function () {
+                    example.children('li:first').superfish('hide');
+                });
+            });
+
+        })(jQuery);
+
+
+    </script>
+</head>
+<body>
+    <div class="divMainPageTitle">
+        <div class="divMainPageTitleInner">
+            <div id="TitleName"><span>研发管理门户</span></div>
+            <div id="TitleLogin"><img src="Image/power.png"/><span>注销</span></div>
+        </div>
+    </div>
+    <div class="divMainPageBody">
+        <div class="divMenu">
+            <div class="UserInfo">
+                <img src="http://7tszkm.com1.z0.glb.clouddn.com/logo.jpg" id="UserLogo" />
+                <div id="UserName">胡芳林</div>
+            </div>
+            <div class="MenuLeft">
+                <ul class="sf-menu" id="example">
+                    <li class="current"><a>首页</a></li>
+                    <li class="current">
+                        <a>研发运营</a>
+                        <ul>
+                            <li>部门工作量分布统计</li>
+                            <li>项目投入工作量统计</li>
+                            <li>饱和度排名</li>
+                        </ul>
+                    </li>
+                    <li class="current">
+                        <a>问题公开</a>
+                    </li>
+                    <li class="current">
+                        <a>研发质量</a>
+                        <ul>
+                            <li>产品维护工作统计</li>
+                            <li>研发人员完成工作统计</li>
+                        </ul>
+                    </li>
+                    <li class="current"><a>流程导航</a></li>
+                </ul>
+            </div>
+            <div class="MenuRight">
+                <ul>
+                    <li><img src="Image/layout.png"/><span>布局调整</span></li>
+                    <li><img src="Image/add.png"/><span>添加应用</span></li>
+                </ul>
+            </div>
+        </div>
+        <div id="divImageBox">
+            <div id="divImageBoxInner">
+                <ul>
+                    <li>
+                        <a href="http://www.baidu.com/" target="_blank"><img src="Image/Image1.png" style="display:list-item" /></a>
+                    </li>
+                    <li>
+                        <a href="http://www.qq.com/" target="_blank"><img src="Image/Image2.png" /></a>
+                    </li>
+                    <li>
+                        <a href="http://www.sina.com/" target="_blank"><img src="Image/Image3.png" /></a>
+                    </li>
+                    <li>
+                        <a href="http://www.sohu.com/" target="_blank"><img src="Image/Image4.png" /></a>
+                    </li>
+                </ul>
+                <div class="slide-controls">
+                    <span id="1" style="background: #0072c6">1</span>
+                    <span id="2">2</span>
+                    <span id="2">3</span>
+                    <span id="4">4</span>
+                </div>
+            </div>
+        </div>
+        <div id="myBody">
+            <div class="Column1">
+                <div class="outsideBlueWorklog">
+                    <div class="divTitleWorklog">
+                        <span id="textTitle">工作日志</span>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft">
+                            <span class="spanText">未填写日志天数</span>
+                        </div>
+                        <div class="divItemRight">
+                            <span class="spanValue">1</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft">
+                            <span class="spanText">个人饱和度</span>
+                        </div>
+                        <div class="divItemRight">
+                            <span class="spanValue">118%</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft">
+                            <span class="spanText">未提交审核日志</span>
+                        </div>
+                        <div class="divItemRight">
+                            <span class="spanValue">3</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="outsideBlueWorklog">
+                    <div class="divTitleWorklog">
+                        <span id="textTitle">审批事项</span>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">待审批项目变更申请</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">1</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">待审批临时补丁申请</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">118</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">待审批的临时授权申请</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">3</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">提交评审的维护库问题</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">11</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">提交评审的自测库问题</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">8</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="outsideBlueWorklog">
+                    <div class="divTitleWorklog">
+                        <span id="textTitle">提交单</span>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">已提交未确认</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">1</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">提交测试</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">118</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">已测试接收</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">3</span>
+                        </div>
+                    </div>
+                    <div class="divItemWorklog">
+                        <div class="divItemLeft" style="width:80%">
+                            <span class="spanText">已提价测试超期未测试</span>
+                        </div>
+                        <div class="divItemRight" style="width:20%">
+                            <span class="spanValue">11</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="Column2">
+                <div class="outsideBlueTODO">
+                    <div class="divTitleTODO">
+                        <span id="textTitle">我的任务</span>
+                        <a id="MoreTODO" href="http://www.baidu.com">更多</a>
+                    </div>
+                    <div class="divTable">
+                        <table width="100%" border="0" id="TodoTable">
+                            <tbody>
+                                <tr>
+                                    <th width="25%">类别</th>
+                                    <th width="35%">任务名称</th>
+                                    <th width="25%">计划完成日期</th>
+                                    <th width="20%">状态</th>
+                                </tr>
+                                <tr>
+                                    <td width="25%">反馈问题-按计划解决</td>
+                                    <td width="35%">任务2</td>
+                                    <td width="25%">2015-1-28</td>
+                                    <td width="20%" class="StateExpire">2天后到期</td>
+                                </tr>
+                                <tr>
+                                    <td width="25%">项目计划</td>
+                                    <td width="35%">任务1</td>
+                                    <td width="25%">2015-1-20</td>
+                                    <td width="20%" class="StateTardiness">已拖期</td>
+                                </tr>
+                                <tr>
+                                    <td width="25%">项目计划</td>
+                                    <td width="35%">任务2</td>
+                                    <td width="25%">2015-1-20</td>
+                                    <td width="20%" class="StateTardiness">已拖期</td>
+                                </tr>
+                                <tr>
+                                    <td width="25%">项目计划</td>
+                                    <td width="35%">任务3</td>
+                                    <td width="25%">2015-1-20</td>
+                                    <td width="20%" class="StateTardiness">已拖期</td>
+                                </tr>
+                                <tr>
+                                    <td width="25%">项目计划</td>
+                                    <td width="35%">任务呵呵呵呵呵南京南京南昌市呵呵</td>
+                                    <td width="25%">2015-1-20</td>
+                                    <td width="20%" class="StateTardiness">已拖期</td>
+                                </tr>
+                                <tr>
+                                    <td width="25%">项目计划</td>
+                                    <td width="35%">测试1</td>
+                                    <td width="25%">2015-1-20</td>
+                                    <td width="20%" class="StateExpire">2天后到期</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="outsideBlueProjectControl">
+                    <div class="divTitleProjectControl">
+                        <span id="textTitleProjectControl">项目管理</span>
+                    </div>
+                    <div class="divItemProjectControl">
+                        <div class="divItemLeftProjectControl">
+                            <span class="spanTextProjectControl">项目名称：xx项目</span>
+                        </div>
+                    </div>
+                    <div class="divItemProjectControl">
+                        <div class="divItemLeftProjectControlSmall">
+                            <span class="spanTextProjectControl">个人饱和度:</span>
+                            <span class="spanValueProjectControl textBlue">118%</span>
+                        </div>
+                        <div class="divItemLeftProjectControlSmall">
+                            <span class="spanTextProjectControl">进度偏差:</span>
+                            <span class="spanValueProjectControl textBlue">106%</span>
+                        </div>
+                        <div class="divItemLeftProjectControlSmall">
+                            <span class="spanTextProjectControl">缺陷密度:</span>
+                            <span class="spanValueProjectControl textBlue">1.2</span>
+                        </div>
+                        <div class="divItemLeftProjectControlSmall">
+                            <span class="spanTextProjectControl">不符合项数:</span>
+                            <span class="spanValueProjectControl textRed">200</span>
+                        </div>
+                    </div>
+                    <div class="divItemProjectControl">
+                        <div class="divItemLeftProjectControl">
+                            <span class="spanTextProjectControl">已拖期里程碑</span>
+                        </div>
+                        <div class="divItemRightProjectControl">
+                            <span class="spanValueProjectControl">计划到达日期</span>
+                        </div>
+                    </div>
+                    <div class="divItemProjectControl">
+                        <div class="divItemLeftProjectControl">
+                            <span class="spanTextProjectControl">里程碑1</span>
+                        </div>
+                        <div class="divItemRightProjectControl">
+                            <span class="spanValueProjectControl textRed">2015-1-15</span>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+            <div class="Column3">
+                <div class="outsideBlueTableSmart">
+                    <div class="divTitleTableSmart">
+                        <span id="textTitle">提交协调问题</span>
+                        <a id="MoreTableSmart" href="http://www.baidu.com">更多</a>
+                    </div>
+                    <div class="divTableSmartTable">
+                        <table width="100%" border="0" id="TableSmartTable">
+                            <tbody>
+                                <tr>
+                                    <th width="55%">部门</th>
+                                    <th width="30%">当前未解决</th>
+                                    <th width="25%">累计</th>
+                                </tr>
+                                <tr>
+                                    <td>平台与技术部</td>
+                                    <td>4</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>GS产品部</td>
+                                    <td>5</td>
+                                    <td>9000</td>
+                                </tr>
+                                <tr>
+                                    <td>GS产品部供应链产品部电子采购产品组</td>
+                                    <td>2</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>HCM产品部</td>
+                                    <td>2</td>
+                                    <td>8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="outsideBlueTableSmart">
+                    <div class="divTitleTableSmart">
+                        <span id="textTitle">影响回款问题</span>
+                        <a id="MoreTableSmart" href="http://www.baidu.com">更多</a>
+                    </div>
+                    <div class="divTableSmartTable">
+                        <table width="100%" border="0" id="TableSmartTable">
+                            <tbody>
+                                <tr>
+                                    <th width="55%">部门</th>
+                                    <th width="30%">当前未解决</th>
+                                    <th width="25%">累计</th>
+                                </tr>
+                                <tr>
+                                    <td>平台与技术部</td>
+                                    <td>4</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>GS产品部</td>
+                                    <td>5</td>
+                                    <td>9000</td>
+                                </tr>
+                                <tr>
+                                    <td>GS产品部供应链产品部电子采购产品组</td>
+                                    <td>2</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>HCM产品部</td>
+                                    <td>2</td>
+                                    <td>8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+                <div class="outsideBlueTableSmart">
+                    <div class="divTitleTableSmart">
+                        <span id="textTitle">到期未解决问题</span>
+                        <a id="MoreTableSmart" href="http://www.baidu.com">更多</a>
+                    </div>
+                    <div class="divTableSmartTable">
+                        <table width="100%" border="0" id="TableSmartTable">
+                            <tbody>
+                                <tr>
+                                    <th width="55%">部门</th>
+                                    <th width="30%">当前未解决</th>
+                                    <th width="25%">累计</th>
+                                </tr>
+                                <tr>
+                                    <td>平台与技术部</td>
+                                    <td>4</td>
+                                    <td>20</td>
+                                </tr>
+                                <tr>
+                                    <td>GS产品部</td>
+                                    <td>5</td>
+                                    <td>9000</td>
+                                </tr>
+                                <tr>
+                                    <td>GS产品部供应链产品部电子采购产品组</td>
+                                    <td>2</td>
+                                    <td>1000</td>
+                                </tr>
+                                <tr>
+                                    <td>HCM产品部</td>
+                                    <td>2</td>
+                                    <td>8</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

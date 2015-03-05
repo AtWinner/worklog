@@ -1,0 +1,276 @@
+a
+{
+    border:0px;
+}
+body
+{
+    margin:0px;
+    padding:0px;
+}
+.divMainPageTitle
+{
+    width:inherit;
+    height:50px;
+    background:#0072c6;
+}
+.divMainPageTitleInner
+{
+    width:1210px;
+    height:50px;
+    background:#0072c6;
+    margin-left:auto;
+    margin-right:auto;
+}
+divMainPageTitleName
+{
+    width:100px;
+    height:50px;
+    background:#0072c6;
+    float:left;
+}
+.divMainPageBody
+{
+    width:1210px;
+    margin-left:auto;
+    margin-right:auto;
+}
+.divMenu
+{
+    width:1210px;
+    height:65px;
+    border-bottom:1px solid #e5e5e5;
+}
+.UserInfo
+{
+    width:227px;
+    height:65px;
+    float:left;
+}
+.MenuLeft
+{
+    float:left;
+    padding-top:15px;
+}
+
+.MenuLeft ul{
+    margin:0px; 
+    padding:0px;
+}
+.MenuLeft ul li
+{
+    float:left; 
+    text-align:center;  
+    line-height:30px;
+    list-style-type:none;
+    font-family:'Microsoft YaHei';
+    font-size:20px;
+    cursor:pointer;
+    color:#0072c6;
+}
+.MenuLeft ul li a
+{
+    padding-left:24px;
+    padding-right:24px;
+    padding-top:5px;
+    padding-bottom:5px;
+}
+.MenuLeft ul li a:hover
+{
+    background:#0072c6;
+    color:#ffffff;
+}
+.MenuLeft ul li ul
+{
+    display:none;
+    position:absolute;
+}
+.MenuLeft ul li ul li
+{
+    float:none;
+    display:block;
+    border-top:1px solid #e5e5e5;
+    font-size:17px;
+    color:#ffffff;
+    background:#0072c6;
+}
+.MenuLeft ul li ul li:hover
+{
+    background:#0099e6;
+}
+.MenuOther
+{
+    font-size:18px;
+}
+.MenuRight
+{
+    float:right;
+    margin-top:15px;
+    margin-right:62px;
+}
+.MenuRight ul
+{
+    margin:0px; 
+    padding:0px;
+}
+.MenuRight ul li
+{
+    float:left; 
+    padding-left:12px;
+    padding-right:12px;
+    text-align:center;  
+    line-height:30px;
+    list-style-type:none;
+    font-family:'Microsoft YaHei';
+    font-size:14px;
+    cursor:pointer;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:#0072c6;
+}
+.MenuRight ul li:hover
+{
+    background:#0072c6;
+    color:#ffffff;
+}
+.MenuRight ul li span
+{
+    margin-left:5px;
+}
+.slide-controls
+{
+    width:inherit;
+    position:absolute;
+    z-index: 1;
+    bottom: 5px;
+    text-align:right;
+    right:5px;
+}
+.slide-controls span
+{
+    padding-left:9px;
+    padding-right:9px;
+    padding-top:3px;
+    padding-bottom:4px;
+    border-radius:14px;
+    background:#999;
+    color:#ffffff;
+    font-family:'Microsoft YaHei';
+    cursor:default;
+}
+
+
+#TitleName
+{
+    padding-top:7px;
+    padding-bottom:7px;
+    padding-left:33px;
+    padding-right:33px;
+    color:#ffffff;
+    font-size:26px;
+    width:160px;
+    font-family:'Microsoft YaHei';
+    border-right:1px solid #CCC;
+    float:left;
+}
+#TitleLogin
+{
+    margin-right:33px;
+    padding-top:14px;
+    padding-bottom:15px;
+    padding-left:10px;
+    color:#ffffff;
+    font-size:16px;
+    font-family:'Microsoft YaHei';
+    float:right;
+    cursor:pointer;
+}
+#TitleLogin img
+{
+    padding-top:3px;
+    float:left;
+}
+#TitleLogin span
+{
+    margin-left:5px;
+    float:left;
+}
+#UserLogo
+{
+    margin-top:3px;
+    margin-left:53px;
+    width:54px;
+    height:54px;
+    border-radius:27px;
+    border-color:#9f8231;
+    border-width:1px;
+    border-style:solid;
+    float:left;
+}
+#UserName
+{
+    float:left;
+    margin-left:24px;
+    margin-top:22px;
+    font-family:'Microsoft YaHei';
+    font-size:16px;
+}
+#divImageBox
+{
+    margin-top:10px;
+    margin-left:auto;
+    margin-right:auto;
+    width:85%;
+    height:200px;
+}
+#divImageBoxInner
+{
+    position:absolute;
+    width:1029px;
+    height:200px;
+    cursor:pointer;
+}
+#divImageBox ul
+{
+    position:absolute;
+    margin:0px;
+    padding:0px;
+}
+#divImageBox ul li
+{
+    list-style-type:none;
+}
+#divImageBox ul li img
+{
+    display:none;
+}
+#myBody
+{
+    width:85%;
+    height:auto;
+    margin:0px auto;
+}
+.Column1
+{
+    width:20%;
+    height:500px;
+    float:left;
+}
+.Column2
+{
+    width:52%;
+    height:800px;
+    float:left;
+    margin:0px 10px;
+}
+.Column3
+{
+    width:26%;
+    height:500px;
+    float:left;
+}
+.Row1Column1
+{
+    float:left;
+    width:100%;
+    height:initial;
+}
