@@ -1,8 +1,11 @@
 .outsideBlueWorklog
 {
-    border:1px solid #0072c6;
+    border:1px solid #dbdbdb;
     border-radius:3px;
+    min-width:200px;
+    border-top:5px solid #9ec1dd;
     margin-top:10px;
+    color:#9ec1dd;
 }
 .outsideRedWorklog
 {
@@ -12,15 +15,19 @@
 .divTitleWorklog
 {
     width:inherit;
-    height:40px;
-    background:#0072c6;
-    padding-top:10px;
+    height:23px;
+    background:#f4f4f4;
+    padding-top:2px;
 }
 .divItemWorklog
 {
     width:inherit;
-    height:50px;
-    border-bottom:1px solid #e0e0e0;
+    height:45px;
+    border-top:1px solid #e0e0e0;
+}
+.divItemWorklog span
+{
+    color:black;
 }
 .divItemLeft
 {
@@ -51,6 +58,5 @@
 {
     margin-left:10px;
     font-family:'Microsoft YaHei';
-    font-size:18px;
-    color:white;
+    font-size:15px;
 }

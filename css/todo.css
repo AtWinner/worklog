@@ -1,21 +1,33 @@
 .outsideBlueTODO
 {
-    border:1px solid #0072c6;
+    border:1px solid #dbdbdb;
     border-radius:3px;
+    border-top:5px solid #9ec1dd;
     margin-top:10px;
+    color:#9ec1dd;
+}
+.outsideGreenTODO
+{
+    border:1px solid #dbdbdb;
+    border-radius:3px;
+    border-top:5px solid #5bb95b;
+    margin-top:10px;
+    color:#5bb95b;
 }
 .outsideRedTODO
 {
-    border:1px solid #da5451;
+    border:1px solid #dbdbdb;
     border-radius:3px;
+    border-top:5px solid #9ec1dd;
     margin-top:10px;
+    color:#9ec1dd;
 }
 .divTitleTODO
 {
     width:inherit;
-    height:40px;
-    background:#0072c6;
-    padding-top:10px;
+    height:23px;
+    background:#f4f4f4;
+    padding-top:2px;
 }
 .divTable
 {
@@ -24,6 +36,7 @@
     overflow-y:auto;
     text-align:center;
     font-size: 14px;
+    color:black;
 }
 .StateTardiness
 {
@@ -38,26 +51,30 @@
     margin-left:10px;
     font-family:Microsoft YaHei;
     font-size:18px;
-    color:white;
+}
+#TodoTable
+{
+    border-top: 1px solid #e0e0e0;
 }
 #TodoTable th
 {
     padding-top: 8px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #e0e0e0;
     font-family: Microsoft YaHei;
 }
 #TodoTable td
 {
     padding-top: 8px;
     padding-bottom: 5px;
-    border-bottom: 1px solid #e0e0e0;
     font-family: Microsoft YaHei;
+    border-top: 1px solid #e0e0e0;
 }
 #MoreTODO
 {
     float:right;
-    margin:5px;
-    color:#FFFFFF;
+    margin-right:5px;
+    color:#999;
     text-decoration:none;
+    font-size:13px;
+    font-family:'Microsoft YaHei';
 }

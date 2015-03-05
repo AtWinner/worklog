@@ -2,27 +2,44 @@
 {
     min-width:500px;
     margin-top:10px;
-    border:1px solid #da5451;
+    border:1px solid #dbdbdb;
     border-radius:3px;
+    border-top:5px solid #9ec1dd;
+    margin-top:10px;
+    color:#9ec1dd;
+}
+.outsideGreenProjectControl
+{
+    min-width:500px;
+    margin-top:10px;
+    border:1px solid #dbdbdb;
+    border-radius:3px;
+    border-top:5px solid #9ec1dd;
+    margin-top:10px;
+    color:#9ec1dd;
 }
 .outsideRedProjectControl
 {
     min-width:500px;
     margin-top:10px;
-    border:1px solid #da5451;
+    border:1px solid #dbdbdb;
     border-radius:3px;
+    border-top:5px solid #ff5655;
+    margin-top:10px;
+    color:#ff5655;
 }
 .divTitleProjectControl
 {
     width:inherit;
-    height:40px;
-    background:#da5451;
-    padding-top:10px;
+    height:23px;
+    background:#f4f4f4;
+    padding-top:2px;
 }
 .divItemProjectControl
 {
     width:inherit;
     height:50px;
+    color:black;
     border-bottom:1px solid #e0e0e0;
 }
 .divItemLeftProjectControl
@@ -68,6 +85,5 @@
 {
     margin-left:10px;
     font-family:'Microsoft YaHei';
-    font-size:18px;
-    color:white;
+    font-size:15px;
 }

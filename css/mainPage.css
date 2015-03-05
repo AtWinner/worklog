@@ -136,27 +136,6 @@ divMainPageTitleName
 {
     margin-left:5px;
 }
-.slide-controls
-{
-    width:inherit;
-    position:absolute;
-    z-index: 1;
-    bottom: 5px;
-    text-align:right;
-    right:5px;
-}
-.slide-controls span
-{
-    padding-left:9px;
-    padding-right:9px;
-    padding-top:3px;
-    padding-bottom:4px;
-    border-radius:14px;
-    background:#999;
-    color:#ffffff;
-    font-family:'Microsoft YaHei';
-    cursor:default;
-}
 
 
 #TitleName
@@ -213,35 +192,6 @@ divMainPageTitleName
     margin-top:22px;
     font-family:'Microsoft YaHei';
     font-size:16px;
-}
-#divImageBox
-{
-    margin-top:10px;
-    margin-left:auto;
-    margin-right:auto;
-    width:85%;
-    height:200px;
-}
-#divImageBoxInner
-{
-    position:absolute;
-    width:1029px;
-    height:200px;
-    cursor:pointer;
-}
-#divImageBox ul
-{
-    position:absolute;
-    margin:0px;
-    padding:0px;
-}
-#divImageBox ul li
-{
-    list-style-type:none;
-}
-#divImageBox ul li img
-{
-    display:none;
 }
 #myBody
 {
